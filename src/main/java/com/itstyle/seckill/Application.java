@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 启动类
  * 创建者 科帮网
  * 创建时间	2018年5月12日
- * API接口测试：http://localhost:8080/seckill/swagger-ui.html
+ * API接口测试：http://localhost:30001/seckill/swagger-ui.html
  * 跑之前 一定要看文库：https://gitee.com/52itstyle/spring-boot-seckill/wikis
  */
 @SpringBootApplication

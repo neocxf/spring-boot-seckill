@@ -11,3 +11,5 @@
 *.project
 *.classpath
 *apiclient_cert.p12
+.idea/
+*.iml

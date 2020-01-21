@@ -10,6 +10,7 @@
    <properties>
      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
      <docker.image.prefix>springboot</docker.image.prefix>
+	   <java.version>1.8</java.version>
   </properties>
   <parent>
 	    <groupId>org.springframework.boot</groupId>
@@ -131,6 +132,10 @@
 		    <groupId>org.springframework.boot</groupId>  
 		    <artifactId>spring-boot-starter-actuator</artifactId>  
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 	    <dependency>
 	 	    <groupId>com.alibaba.csp</groupId>
 		    <artifactId>sentinel-core</artifactId>
@@ -156,6 +161,17 @@
               <groupId>org.apache.maven.plugins</groupId>
               <artifactId>maven-javadoc-plugin</artifactId>
                </plugin>
+	  <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-compiler-plugin</artifactId>
+		  <version>3.5</version>
+		  <configuration>
+			  <!--<proc>none</proc>-->
+			  <skip>true</skip>
+			  <source>${java.version}</source>
+			  <target>${java.version}</target>
+		  </configuration>
+	  </plugin>
 	  </plugins>
   </build>
 </project>
